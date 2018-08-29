@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SocialNetwork</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="reset_message">Please provide your account email, we will send an email with a password reset link. take care!</string>
+
+</resources>
