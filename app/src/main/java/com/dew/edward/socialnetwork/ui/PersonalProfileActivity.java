@@ -118,14 +118,13 @@ public class PersonalProfileActivity extends AppCompatActivity {
         personalDeclineFriendRequestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
+                cancelFriendRequest();
             }
         });
         personalDeclineFriendRequestButton.setVisibility(View.INVISIBLE);
         personalDeclineFriendRequestButton.setEnabled(false);
 
-        if (senderUserId.equals(receiverUserId)) {
+        if (senderUserId.equals(receiverUserId)) { // it's itself
             personalSendFriendRequestButton.setVisibility(View.GONE);
         } else {
             personalSendFriendRequestButton.setOnClickListener(new View.OnClickListener() {

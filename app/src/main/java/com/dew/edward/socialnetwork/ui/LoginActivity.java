@@ -201,10 +201,10 @@ public class LoginActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             loadingBar.dismiss();
                             if (task.isSuccessful()) {
-//                                sendUserToMainActivity();  // without email verifications
+                                sendUserToMainActivity();  // without email verifications
                                 Toast.makeText(LoginActivity.this, "you logged in successfully. ", Toast.LENGTH_SHORT).show();
 
-                                verifyEmailAddress(); //for email verification
+//                                verifyEmailAddress(); //for email verification
                             } else {
                                 String message = task.getException().getMessage();
                                 Toast.makeText(LoginActivity.this, "Login Error: " + message, Toast.LENGTH_SHORT).show();

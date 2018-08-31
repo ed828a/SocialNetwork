@@ -168,7 +168,7 @@ public class SetupActivity extends AppCompatActivity {
                                         Toast.makeText(SetupActivity.this,
                                                 "Profile image stored in firebase Database successfully.",
                                                 Toast.LENGTH_SHORT).show();
-                                        // todo: should using glide to update profile image on this activity
+                                        // todo: should using Picasso to update profile image on this activity
 
 //                                        Intent selfIntent = new Intent(SetupActivity.this, SetupActivity.class);
 //                                        startActivity(selfIntent);

@@ -16,12 +16,11 @@
     android:layout_alignParentTop="true"
     android:layout_marginTop="2dp"
     android:layout_toEndOf="@id/receiver_profile_image"
-    android:background="@drawable/receiver_message_text_background"
+    android:background="@drawable/bubble_out"
     android:padding="10dp"
     android:text="receiver message "
-    android:textColor="@android:color/background_light"
-    android:textSize="14sp"
-    android:textStyle="bold" />
+    android:textColor="@android:color/black"
+    android:textSize="14sp" />
 
     <TextView
         android:id="@+id/sender_message_text"
@@ -31,10 +30,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="2dp"
 
-        android:background="@drawable/sender_message_text_background"
+        android:background="@drawable/bubble_in2"
         android:padding="10dp"
         android:text="sender message "
         android:textColor="@android:color/background_light"
-        android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textSize="14sp" />
 </RelativeLayout>

@@ -66,7 +66,7 @@ public class MessageAdapter extends FirebaseRecyclerAdapter<Message, MessageAdap
         if (messageType.equals("text")){
 
             if (fromUserId.equals(messageSenderId)){ // sender's ,messages
-                holder.senderMessageTextView.setBackgroundResource(R.drawable.sender_message_text_background);
+                holder.senderMessageTextView.setBackgroundResource(R.drawable.bubble_in2);
                 holder.senderMessageTextView.setTextColor(Color.WHITE);
                 holder.senderMessageTextView.setGravity(Gravity.RIGHT);
                 holder.senderMessageTextView.setText(model.getMessage());
@@ -77,8 +77,8 @@ public class MessageAdapter extends FirebaseRecyclerAdapter<Message, MessageAdap
                 holder.senderMessageTextView.setVisibility(View.INVISIBLE);
                 holder.receiverMessageTextView.setVisibility(View.VISIBLE);
                 holder.receiverProfileImageView.setVisibility(View.VISIBLE);
-                holder.receiverMessageTextView.setBackgroundResource(R.drawable.receiver_message_text_background);
-                holder.receiverMessageTextView.setTextColor(Color.WHITE);
+                holder.receiverMessageTextView.setBackgroundResource(R.drawable.bubble_out);
+                holder.receiverMessageTextView.setTextColor(Color.BLUE);
                 holder.receiverMessageTextView.setGravity(Gravity.LEFT);
                 holder.receiverMessageTextView.setText(model.getMessage());
             }

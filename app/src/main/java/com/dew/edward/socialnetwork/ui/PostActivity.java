@@ -146,7 +146,7 @@ public class PostActivity extends AppCompatActivity {
                             savePostInformationToDatabase();
 
                         } else {
-                    loadingBar.dismiss();
+                            loadingBar.dismiss();
                             Toast.makeText(PostActivity.this,
                                     "Error: " + task.getException().getMessage(),
                                     Toast.LENGTH_SHORT).show();
@@ -160,7 +160,7 @@ public class PostActivity extends AppCompatActivity {
         postsRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists()){
+                if (dataSnapshot.exists()) {
                     countPosts = dataSnapshot.getChildrenCount();
                 } else {
                     countPosts = 0;

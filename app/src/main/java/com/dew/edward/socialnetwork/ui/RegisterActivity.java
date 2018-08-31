@@ -76,10 +76,9 @@ public class RegisterActivity extends AppCompatActivity {
 
                             if (task.isSuccessful()) {
                                 sendEmailVerificationMessage(); // with email verification.
+
 //                                sendUserToSetupActivity(); // no email verification
-
 //                                Toast.makeText(RegisterActivity.this, "you are authenticated successfully.", Toast.LENGTH_SHORT).show();
-
                             } else {
                                 String message = task.getException().getMessage();
                                 Toast.makeText(RegisterActivity.this, "Error occured: " + message, Toast.LENGTH_SHORT).show();
@@ -115,6 +114,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
+    // for no email verification
     private void sendUserToSetupActivity() {
         Intent setupIntent = new Intent(RegisterActivity.this, SetupActivity.class);
         setupIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -122,6 +122,7 @@ public class RegisterActivity extends AppCompatActivity {
         finish();
     }
 
+    // for email verification
     private void sendUserToLoginActivity() {
         Intent loginIntent = new Intent(RegisterActivity.this, LoginActivity.class);
         loginIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

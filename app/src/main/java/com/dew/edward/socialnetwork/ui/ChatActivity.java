@@ -113,6 +113,7 @@ public class ChatActivity extends AppCompatActivity {
                         Toast.makeText(ChatActivity.this,
                                 "message sent successfully", Toast.LENGTH_SHORT).show();
                         messageInput.setText("");
+                        userMessageList.scrollToPosition(adapter.getItemCount() - 1);
                     } else {
                         Toast.makeText(ChatActivity.this,
                                 "Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
