@@ -191,7 +191,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Please input your password...", Toast.LENGTH_SHORT).show();
         } else {
             loadingBar.setTitle("Login");
-            loadingBar.setMessage("please wait, while you are loggin in your account...");
+            loadingBar.setMessage("please wait, while you are logging in your account...");
             loadingBar.setCanceledOnTouchOutside(true);
             loadingBar.show();
 
