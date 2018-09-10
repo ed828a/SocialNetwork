@@ -170,8 +170,8 @@ public class SetupActivity extends AppCompatActivity {
                                                 Toast.LENGTH_SHORT).show();
                                         // todo: should using Picasso to update profile image on this activity
 
-//                                        Intent selfIntent = new Intent(SetupActivity.this, SetupActivity.class);
-//                                        startActivity(selfIntent);
+                                        Intent selfIntent = new Intent(SetupActivity.this, SetupActivity.class);
+                                        startActivity(selfIntent);
                                     } else {
                                         Toast.makeText(SetupActivity.this,
                                                 "Error: " + task.getException().getMessage(),

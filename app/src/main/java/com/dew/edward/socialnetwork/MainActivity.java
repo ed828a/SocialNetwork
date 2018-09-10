@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
 
         adapter = new PostAdapter(options);
         postList.setAdapter(adapter);
+
     }
 
     private void displayallUsers() {

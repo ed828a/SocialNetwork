@@ -67,7 +67,7 @@ public class PostAdapter extends FirebaseRecyclerAdapter<Post, PostAdapter.PostV
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendUserToMainActivity(view.getContext(), postKey);
+                sendUserToClickPostActivity(view.getContext(), postKey);
             }
         });
 
@@ -114,7 +114,7 @@ public class PostAdapter extends FirebaseRecyclerAdapter<Post, PostAdapter.PostV
         startActivity(context, commentsIntent, null);
     }
 
-    private void sendUserToMainActivity(Context context, String postKey) {
+    private void sendUserToClickPostActivity(Context context, String postKey) {
         Intent clickPostIntent = new Intent(context, ClickPostActivity.class);
         clickPostIntent.putExtra("PostKey", postKey);
         startActivity(context, clickPostIntent, null);
